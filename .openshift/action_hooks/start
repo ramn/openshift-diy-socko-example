@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd "$OPENSHIFT_REPO_DIR"
+exec nohup target/universal/stage/bin/diy-sbt |& /usr/bin/logshifter -tag diy &
